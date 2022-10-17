@@ -301,6 +301,8 @@ QUALITY-WORK
 
 .quality__work--img--wrapper {
   width: 50%;
+  display: flex;
+  align-items: center;
 }
 
 .quality__work--img {
@@ -326,3 +328,4 @@ QUALITY-WORK
 .button__quality--work:hover {
   opacity: 0.5;
 }
+
