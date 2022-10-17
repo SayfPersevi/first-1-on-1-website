@@ -89,7 +89,7 @@ LANDING
   display: flex;
   align-items: center;
   justify-content: center;
-height: 80vh;
+  height: 80vh;
 }
 
 .header__description--wrapper {
@@ -137,7 +137,6 @@ input:hover {
 .button {
   content: "";
   position: absolute;
-  right: 0%;
   margin: 8px 8px 8px 0;
   padding: 16px 32px;
   font-size: 16px;
@@ -195,7 +194,6 @@ FEATURES
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .features__title {
@@ -231,8 +229,7 @@ FEATURES
 .features__service {
   display: flex;
   width: calc(100% / 3);
-padding: 32px 8px;
-
+  padding: 32px 8px;
 }
 
 .features__service--icon {
@@ -242,10 +239,10 @@ padding: 32px 8px;
 }
 
 .features__service--description {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-margin: 8px 0 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 8px 0 0 16px;
 }
 
 .features__service--header {
@@ -254,8 +251,78 @@ margin: 8px 0 0 16px;
 
 .features__service--para {
   font-size: 16px;
-font-weight: 500;
-color: #7c8ba1;
-padding-top: 16px;
-line-height: 2;
+  font-weight: 500;
+  color: #7c8ba1;
+  padding-top: 16px;
+  line-height: 2;
+}
+
+/*
+
+QUALITY-WORK
+
+*/
+
+.quality__container {
+  padding: 96px 0;
+}
+
+.quality__work--wrapper {
+  display: flex;
+}
+
+.quality__work--description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 60px 32px 0;
+}
+
+.quality__work--title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #6415ff;
+}
+
+.quality__work--header {
+  font-size: 48px;
+  font-weight: 900;
+  margin-top: 16px;
+  color: #243e63;
+}
+
+.quality__work--para {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 16px;
+  line-height: 1.625;
+  color: #7c8ba1;
+}
+
+.quality__work--img--wrapper {
+  width: 50%;
+}
+
+.quality__work--img {
+  width: 100%;
+}
+
+.button__quality--wrapper {
+  display: flex;
+  margin-top: 32px;
+}
+
+.button__quality--work {
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #6415ff;
+  border-radius: 32px;
+  text-align: center;
+  opacity: 1;
+  transition: all 300ms ease;
+}
+
+.button__quality--work:hover {
+  opacity: 0.5;
 }
