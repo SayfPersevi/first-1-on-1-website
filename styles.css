@@ -329,3 +329,81 @@ QUALITY-WORK
   opacity: 0.5;
 }
 
+/*
+
+STEPS
+
+*/
+
+.steps__container {
+  padding: 96px 0;
+}
+
+.steps__wrapper {
+  display: flex;
+}
+
+.steps__img--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.steps__img {
+  padding: 48px;
+  width: 100%;
+}
+
+.steps__description--title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.steps__description--header {
+  font-size: 48px;
+  font-weight: 900;
+  margin-top: 16px;
+  color: #243e63;
+}
+
+.steps__description {
+  display: flex;
+  flex-direction: column;
+}
+
+.steps__description--steps {
+  display: flex;
+  flex-direction: column;
+}
+
+.steps__description--step {
+  display: flex;
+  margin-top: 32px;
+}
+
+.steps__number {
+  font-size: 36px;
+  font-weight: 600;
+  color: #cbd5e0;
+  padding-right: 20px;
+}
+
+.steps__number--description {
+  display: flex;
+  flex-direction: column;
+}
+
+.steps__number--header {
+  font-size: 20px;
+  font-weight: 600;
+  color: #243e63;
+}
+
+.steps__number--para {
+  font-size: 14px;
+  font-weight: 500;
+  color: #718096;
+  margin-top: 12px;
+  max-width: 70%;
+}
