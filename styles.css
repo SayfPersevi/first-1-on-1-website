@@ -13,6 +13,8 @@ ul {
 
 a {
   text-decoration: none;
+  position: relative;
+  transition: opacity all 300ms ease;
 }
 
 p {
@@ -31,6 +33,30 @@ p {
 
 hr {
   opacity: 0.3;
+}
+
+i:hover {
+  opacity: 0.7;
+  transition: all 300ms ease;
+}
+
+.link__hover-effect::after {
+content: "";
+position: absolute;
+height: 3px;
+width: 0;
+bottom: -3px;
+right: 0;
+transition: all 300ms ease;
+}
+
+.link__hover-effect--white::after {
+background-color: white;
+}
+
+.link__hover-effect:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 /*
@@ -54,6 +80,11 @@ LANDING
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.025em;
+  transition: all 300ms ease;
+}
+
+.nav__link:hover {
+  color: #6415ff;
 }
 
 .nav__link--login {
@@ -82,6 +113,11 @@ LANDING
   align-items: center;
   font-size: 24px;
   font-weight: 900;
+  transition: all 300ms ease;
+}
+
+.nav__img--wrapper:hover {
+  color: #6415ff;
 }
 
 .nav__img--logo {
@@ -561,6 +597,7 @@ STEPS
   text-align: center;
   letter-spacing: 0.05em;
   opacity: 1;
+  scale: 100%;
   transition: all 300ms ease;
 }
 .button__pricing--plans--1,
@@ -588,4 +625,107 @@ STEPS
 .subscription__link:nth-child(even) .subscription__link--link:first-child,
 .white--text {
   color: white;
+}
+
+.button__pricing--plans--1:hover,
+.button__pricing--plans--2:hover,
+.button__pricing--plans--3:hover {
+  scale: 95%;
+}
+
+/*
+
+FOOTER
+
+*/
+
+footer {
+  background-color: #6415ff;
+  color: white;
+  padding: 48px 0 96px 0;
+}
+
+footer a {
+  color: white;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__list--wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__list {
+  margin-top: 48px;
+}
+
+.footer__list--header {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.footer__list--links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.footer__list--link {
+  margin-top: 12px;
+  padding-bottom: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer__hr {
+  margin: 48px 0;
+}
+
+.copyright__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__logo {
+  width: 32px;
+  height: 32px;
+}
+
+.footer__logo--text {
+font-size: 20px;
+font-weight: 900;
+margin-left: 8px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+font-weight: 500;
+}
+
+.social-media__links {
+  display: flex;
+justify-content: space-between;
+
+}
+
+.social-media__link {
+  font-size: 24px;
+  margin-right: 16px;
+  padding: 8px;
+  border-radius: 9999px;
 }
