@@ -66,6 +66,25 @@
                             </a>
                         </li>
                     </ul>
+                    <button class="btn__menu" onclick="openMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="menu__backdrop">
+                        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <ul class="menu__links">
+                            <li class="menu__list">
+                                <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+                            </li>
+                            <li class="menu__list">
+                                <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link no-cursor" onclick="closeMenu()">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
             <header>
@@ -89,7 +108,7 @@
                         </p>
                         <figure class="trusted__companies__logo--wrapper">
                             <img src="https://treact.owaiskhan.me/static/media/customers-logo-strip.680ac7c2e8ae28161d2c.png"
-                            class="trusted-companies__logo">
+                                class="trusted-companies__logo">
                         </figure>
                     </div>
                     <figure class="header__img--wrapper">
